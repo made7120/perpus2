@@ -281,7 +281,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url("https://i.ibb.co.com/6tv7dw8/galak2.webp");
+        background-image: url("https://i.ibb.co.com/3N6hY1T/galak3.webp");
         background-size: cover;
 
     </style>
