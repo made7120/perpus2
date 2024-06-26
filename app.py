@@ -80,7 +80,7 @@ else:
             self.status = status
 
         def info_buku(self):
-            status_display = "tidak tersedia" if self.status == "dipinjam" else "tersedia"
+            status_display = "tidak tersedia" jika self.status == "dipinjam" else "tersedia"
             return f"Judul: {self.judul}, Penulis: {self.penulis}, Tahun Terbit: {self.tahun_terbit}, Status: {status_display}, Foto Sampul: {self.foto_sampul}"
 
     class BukuDigital(Buku):
@@ -276,14 +276,19 @@ else:
             pesan = perpustakaan.hapus_buku(judul)
             st.write(pesan)
 
-#css
+# CSS
 st.markdown(
     """
     <style>
     .stApp {
         background-image: url("https://i.ibb.co.com/XCGd6tp/galak.webp");
         background-size: cover;
-
+    }
+    .stTitle, .stSubheader, .stText, .stButton {
+        background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+        padding: 10px;
+        border-radius: 10px;
+    }
     </style>
     """,
     unsafe_allow_html=True
