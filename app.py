@@ -80,7 +80,7 @@ else:
             self.status = status
 
         def info_buku(self):
-            status_display = "tidak tersedia" jika self.status == "dipinjam" else "tersedia"
+            status_display = "tidak tersedia" if self.status == "dipinjam" else "tersedia"
             return f"Judul: {self.judul}, Penulis: {self.penulis}, Tahun Terbit: {self.tahun_terbit}, Status: {status_display}, Foto Sampul: {self.foto_sampul}"
 
     class BukuDigital(Buku):
